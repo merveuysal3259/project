@@ -1,0 +1,79 @@
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <div class="row">
+    <div>
+      <h2>Galeri</h2>
+      &nbsp;
+    </div>
+  </div>
+  <div class="row">
+  <div class="w3-container">
+  <p>Aşağıdaki butonları kullanarak resimlere bakabilirsiniz</p>
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="http://www.gunesfoto.net/uploads/album/dugun-fotolari_7.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+   
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://s-media-cache-ak0.pinimg.com/736x/64/27/4c/64274c451081e656937565066b687720.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+   
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://dugundefotograf.com/wp-content/uploads/2012/02/dugun-fotografcisi-dugunde-fotograf-dugun-fotografi-23.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXAbqNdQsTh1NDk0oGFJSpWQTmUrN2BYHwGOvPL0GHondzFoPX" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://i.dugun.com/articles/body/4_aile_buyukleri_fotoda.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  
+  </div>    
+</div>
+

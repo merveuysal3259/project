@@ -1,0 +1,39 @@
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <div class="row">
+    <div>
+      <h2>Hoşgeldiniz</h2>
+      &nbsp;
+    </div>
+  </div>
+  <div class="row">
+   <div class="w3-content w3-section" style="max-width:500px">
+
+  <center>
+  <img class="mySlides w3-animate-fading" src="https://emrecazoglu.com/wp-content/uploads/2014/07/ankara-d%C3%BC%C4%9F%C3%BCn-fotograf%C3%A7%C4%B1s%C4%B1-1-1030x686.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="http://www.adalarfotograf.com/wp-content/uploads/2014/12/ADALAR-048-2933.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="https://simplyfantasticbooks.files.wordpress.com/2010/07/be_grateful-10.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="http://hulyalaleci.com/wp-content/uploads/2014/02/2R4A5142_pp-copy-1024x682.jpg" style="width:100%">
+  </center>
+</div>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 9000);    
+    }
+</script>
+  
+  </div>    
+</div>
+

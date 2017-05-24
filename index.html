@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cstest">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BIC Grapic</title>
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body> 
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="http://www.netfotograf.com/images/fotografci-rehberi.jpg">
+          </div>
+          <div class="col-md-6" >
+            <center><h1>Agrilion Fotoğrafçılık</h1><br></center>
+          </div>
+        </div>   
+        <nav>
+          <ul class="nav nav-justified">
+            <li><a href="#/ana">Ana Sayfa</a></li>
+            <li><a href="#/info">Hakkımızda</a></li>
+            <li><a href="#/galeri">Galeri</a></li>
+            <li><a href="#/iletisim">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div ng-controller="AnaKtrl">
+        <div ng-view></div>
+      </div>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; 2017 Agrilion Fotoğrafçılık</p>
+      </footer>
+
+    </div> <!-- /container -->
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+   <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+   <script src="https://cdn.jsdelivr.net/lodash/4.6.1/lodash.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap-tpls.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.1/ui-grid.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.1/ui-grid.min.css" type="text/css" />
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.7/angular-material.min.css" />
+   <script src="https://angular-file-upload.appspot.com/js/ng-file-upload-shim.js"></script>
+   <script src="https://angular-file-upload.appspot.com/js/ng-file-upload.js"></script>
+   <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    
+
+
+  </body>
+</html>
